@@ -12,8 +12,8 @@ driver.find_element_by_xpath('//*[@id="mlogin01"]/div/a').click()
 driver.implicitly_wait(delay)
 
 driver.get('http://www.icampus.ac.kr/back/login/login.do')
-driver.find_element_by_name('uid').send_keys('guard1000')
-driver.find_element_by_name('pwd').send_keys('1q2w3e4r!')
+driver.find_element_by_name('uid').send_keys('[아이디]')
+driver.find_element_by_name('pwd').send_keys('[비밀번호]')
 driver.find_element_by_xpath('//*[@id="main_login"]/table/tbody/tr[1]/td[2]/a').click()
 
 driver.save_screenshot("icampus_prof.png")
